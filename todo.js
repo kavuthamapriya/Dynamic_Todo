@@ -43,20 +43,15 @@ function setLimit() {
     return;
   }
 
-  // Ensure limit does not exceed the number of items in todos
   limit = Math.min(userInput, todos.length);
 
-  // Display data based on the updated limit
   displayData(todos.slice(0, limit));
 }
 // Delete item
 function deleteItem(itemId) {
-  // Find index of the item in todos array
   const index = todos.findIndex((todo) => todo.id === itemId);
   if (index !== -1) {
-    // Remove item from todos array
     todos.splice(index, 1);
-    // Update displayed data
     displayData(todos.slice(0, limit));
   }
 }
