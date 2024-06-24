@@ -37,17 +37,17 @@ function searchData() {
   displayData(filteredData.slice(0, limit));
 }
 function setLimit() {
-    let userInput = parseInt(document.querySelector("#limit").value);
-    if (isNaN(userInput) || userInput <= 0) {
-        alert("Please enter a valid positive number for the limit.");
-        return;
-    }
+  let userInput = parseInt(document.querySelector("#limit").value);
+  if (isNaN(userInput) || userInput <= 0) {
+    alert("Please enter a valid positive number for the limit.");
+    return;
+  }
 
-    // Ensure limit does not exceed the number of items in todos
-    limit = Math.min(userInput, todos.length);
+  // Ensure limit does not exceed the number of items in todos
+  limit = Math.min(userInput, todos.length);
 
-    // Display data based on the updated limit
-    displayData(todos.slice(0, limit));
+  // Display data based on the updated limit
+  displayData(todos.slice(0, limit));
 }
 // Delete item
 function deleteItem(itemId) {

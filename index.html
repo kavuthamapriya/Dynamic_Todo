@@ -1,34 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TODO List</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <h1>Fetch Data from API</h1>
     <div class="controls">
-        <input type="text" id="search-term" placeholder="Search Title">
-        <button onclick="searchData()">Search</button>
-        <input type="number" id="limit" placeholder="Set Limit" value="20">
-        <button onclick="setLimit()">Set Limit</button>
+      <input type="text" id="search-term" placeholder="Search Title" />
+      <button onclick="searchData()">Search</button>
+      <input type="number" id="limit" placeholder="Set Limit" value="20" />
+      <button onclick="setLimit()">Set Limit</button>
     </div>
     <table>
-        <thead>
-            <tr>
-                <th>id</th>
-                <th>Title</th>
-                <th>Completed</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody id="data-output">
-
-        </tbody>
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>Title</th>
+          <th>Completed</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="data-output"></tbody>
     </table>
 
-
     <script src="todo.js"></script>
-</body>
+  </body>
 </html>
